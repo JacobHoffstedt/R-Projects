@@ -5,7 +5,7 @@ library(scales)
 library(Synth)
 
 # Load Data
-dat <- read_excel("C:/Users/Jacob/OneDrive/Dokument/Examensarbete VT2025/Arbetslöshet.xlsx", sheet = "Slå ihop1")
+dat <- read_excel("", sheet = "")
 
 
 
@@ -25,24 +25,10 @@ dat <- dat %>% mutate(PERIOD = as.Date(PERIOD))
 
 
 # Define Treated municipalities
-treated_municipalities <- c("Ljusdal", "Älvdalen", "Malung", "Örnsköldsvik", 
-                            "Bräcke", "Jokkmok", "Ragunda", "Härjedalen")
+treated_municipalities <- c("example")
 
 
-donor_municipalities <- c(
-  "Kil", "Eda", "Torsby", "Storfors", "Hammarö", "Munkfors", "Forshaga", "Grums", "Årjäng", "Sunne",
-  "Kristinehamn", "Filipstad", "Hagfors", "Arvika", "Säffle", "Vansbro", "Gagnef", "Leksand", "Rättvik", "Orsa",
-  "Smedjebacken", "Mora",
-  "Säter", "Hedemora", "Avesta", "Ludvika", "Ockelbo", "Hofors", "Ovanåker", "Nordanstig",
-  "Sandviken", "Söderhamn", "Bollnäs", "Hudiksvall", "Ånge", "Timrå", "Härnösand",
-  "Kramfors", "Sollefteå",
-  "Krokom", "Strömsund", "Åre", "Berg",
-  "Nordmaling", "Bjurholm", "Vindeln", "Robertsfors", "Norsjö", "Malå", "Storuman", "Sorsele", "Dorotea",
-  "Vännäs", "Vilhelmina", "Åsele", "Lycksele",
-  "Arvidsjaur", "Arjeplog",
-  "Överkalix", "Kalix", "Övertorneå", "Pajala", "Gällivare", "Älvsbyn",
-  "Boden", "Haparanda", "Kiruna"
-)
+donor_municipalities <- c(example)
 
 
 
